@@ -16,6 +16,8 @@ public class TestAdapter {
 
         JSONService jsonService = new JSONAdapter(xmlService);
 
+        System.out.println(xmlService.getEurRubRates().toString());
+
         System.out.println("EUR - RUB rates:");
         System.out.println(jsonService.getEurRubRates().toString(4));
 
